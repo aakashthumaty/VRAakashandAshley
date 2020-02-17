@@ -26,6 +26,8 @@ public class TreasureHunter : MonoBehaviour
 
     CollectibleTreasure thingIGrabbed;
 
+    Vector3 previousPointerPos;
+
 //selectable ness
 
     [SerializeField] private string selectableTag = "Selectable";
@@ -112,24 +114,24 @@ public class TreasureHunter : MonoBehaviour
         }
     }
 
-    // void letGo(){
-    //     if (thingIGrabbed){
-    //         Collider[] overlappingThingsWithLeftHand=Physics.OverlapSphere(leftPointerObject.transform.position,0.01f,collectiblesMask);
-    //         if (overlappingThingsWithLeftHand.Length>0){
-    //             if (thingOnGun){
-    //                 detachGameObject(thingOnGun,AttachmentRule.KeepWorld,AttachmentRule.KeepWorld,AttachmentRule.KeepWorld);
-    //                 simulatePhysics(thingOnGun,Vector3.zero,true);
-    //             }
-    //             attachGameObjectToAChildGameObject(overlappingThingsWithLeftHand[0].gameObject,leftPointerObject,AttachmentRule.SnapToTarget,AttachmentRule.SnapToTarget,AttachmentRule.KeepWorld,true);
-    //             thingOnGun=overlappingThingsWithLeftHand[0].gameObject;
-    //             thingIGrabbed=null;
-    //         }else{
-    //             detachGameObject(thingIGrabbed.gameObject,AttachmentRule.KeepWorld,AttachmentRule.KeepWorld,AttachmentRule.KeepWorld);
-    //             simulatePhysics(thingIGrabbed.gameObject,(rightPointerObject.gameObject.transform.position-previousPointerPos)/Time.deltaTime,true);
-    //             thingIGrabbed=null;
-    //         }
-    //     }
-    // }
+    void letGo(){
+        if (thingIGrabbed){
+            Collider[] overlappingThingsWithLeftHand=Physics.OverlapSphere(leftPointerObject.transform.position,0.01f);
+            if (overlappingThingsWithLeftHand.Length>0){
+                // if (thingOnGun){
+                //     detachGameObject(thingOnGun,AttachmentRule.KeepWorld,AttachmentRule.KeepWorld,AttachmentRule.KeepWorld);
+                //     simulatePhysics(thingOnGun,Vector3.zero,true);
+                // }
+                attachGameObjectToAChildGameObject(overlappingThingsWithLeftHand[0].gameObject,leftPointerObject,AttachmentRule.SnapToTarget,AttachmentRule.SnapToTarget,AttachmentRule.KeepWorld,true);
+                //thingOnGun=overlappingThingsWithLeftHand[0].gameObject;
+                thingIGrabbed=null;
+            }else{
+                detachGameObject(thingIGrabbed.gameObject,AttachmentRule.KeepWorld,AttachmentRule.KeepWorld,AttachmentRule.KeepWorld);
+                simulatePhysics(thingIGrabbed.gameObject,(rightPointerObject.gameObject.transform.position-previousPointerPos)/Time.deltaTime,true);
+                thingIGrabbed=null;
+            }
+        }
+    }
 
     // Update is called once per frame
     void Update()
