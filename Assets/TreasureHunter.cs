@@ -98,8 +98,8 @@ public class TreasureHunter : MonoBehaviour
                 //The object will NOT preserve momentum when you throw it like in UE4.
                 //need to set its velocity itself.... even if you switch the kinematic/gravity settings around instead of deleting/adding rb
                 //maybe dont comment out this next line
-                //Rigidbody newRB=target.AddComponent<Rigidbody>();
-                //newRB.velocity=oldParentVelocity;
+                Rigidbody newRB=target.AddComponent<Rigidbody>();
+                newRB.velocity=oldParentVelocity;
             }
         }
     }
@@ -151,8 +151,8 @@ public class TreasureHunter : MonoBehaviour
 
             int point = 0;
             int kc = 0;
-            score.fontSize = 40;
-            score.font.material.color = Color.red;
+            score.fontSize = 10;
+            score.font.material.color = Color.blue;
             //score.text = "got here 1";
 
             // int numCylinder = 0;
@@ -175,7 +175,7 @@ public class TreasureHunter : MonoBehaviour
                         print(iv.Value);
                         //score.text = "got here 2";
 
-                        win.text += " You have " + iv.Value + " " + iv.Key.pf + "\n";
+                        win.text += " You have " + iv.Value + " " + iv.Key.pf + " each worth " + iv.Key.value + " points! \n";
                         
                     }
 
@@ -227,7 +227,7 @@ public class TreasureHunter : MonoBehaviour
             RaycastHit outHit;
             if (Physics.Raycast(rightPointerObject.transform.position, rightPointerObject.transform.forward, out outHit, 1000.0f))
             {
-                win.fontSize = 20;
+                win.fontSize = 10;
                 win.font.material.color = Color.blue;
                 //win.text = "Hi Ashley" + outHit.transform.gameObject.name;
                 print("RAY RAY RAY!");
@@ -359,7 +359,7 @@ public class TreasureHunter : MonoBehaviour
                 //     // yay we collected all 3
                 // }
                 print("something is happening");
-                win.fontSize = 20;
+                win.fontSize = 10;
                 win.font.material.color = Color.blue;
                 int point = 0;
                 int kc = 0;
