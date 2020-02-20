@@ -185,6 +185,7 @@ public class TreasureHunter : MonoBehaviour
                 score.text = "Your total score is " + point;
             
 
+
         }
         //myv = Vector3.Distance(rightPointerObject.transform.position, selfGO.transform.position);
 
