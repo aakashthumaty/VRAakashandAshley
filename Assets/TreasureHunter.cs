@@ -117,11 +117,11 @@ public class TreasureHunter : MonoBehaviour
     }
 
     void letGo(){
-        win.text = "not even letgo";
+        //win.text = "not even letgo";
         if(thingIGrabbed){
         detachGameObject(thingIGrabbed.gameObject,AttachmentRule.KeepWorld,AttachmentRule.KeepWorld,AttachmentRule.KeepWorld);
         simulatePhysics(thingIGrabbed.gameObject,Vector3.zero,true);
-        win.text = "let go but nothing else.";
+        //win.text = "let go but nothing else.";
         float firstx, firsty, firstz, secondx, secondy, secondz;
         firstx = rightPointerObject.transform.position.x;
         firsty = rightPointerObject.transform.position.y;
@@ -132,14 +132,15 @@ public class TreasureHunter : MonoBehaviour
         
         myv = new Vector3(firstx - secondx, firsty - secondy, firstz - secondz);
         
+        //if the object is near the waist
         if (myv.x <= 0.5 && myv.y <= 0.5 && myv.z <= 0.5){
             print("OMG SELECTED!!! woot woot woot");
-            win.text = "added to waist";
+            //win.text = "added to waist";
 
             var v = thingIGrabbed.gameObject.GetComponent<CollectibleTreasure>();
             print(v.value);
             var n = v.pf;
-            win.text = n;
+            //win.text = n;
             int count;
             print(v.name);
             print(n);
@@ -152,7 +153,15 @@ public class TreasureHunter : MonoBehaviour
             int kc = 0;
             score.fontSize = 40;
             score.font.material.color = Color.red;
-            score.text = "got here 1";
+            //score.text = "got here 1";
+
+            // int numCylinder = 0;
+            // int numCapsule = 0;
+            // int numCube = 0;
+            // int numSphere = 0;
+
+            win.text = "Hi. This is Ashley and Aakash. \n";
+
             foreach(KeyValuePair<CollectibleTreasure,int> iv in invent.dict)
                     {
                         print("this is the invent stuff: " + invent.dict);
@@ -161,14 +170,19 @@ public class TreasureHunter : MonoBehaviour
                         point += invent.dict[iv.Key]*iv.Key.value;
                         print(invent.dict[iv.Key]);
 
-                        Debug.Log(iv.Key);
-                        Debug.Log(iv.Value);
-                        score.text = "got here 2";
+                        print("values!!");                        
+                        print(iv.Key.pf);
+                        print(iv.Value);
+                        //score.text = "got here 2";
+
+                        win.text += " You have " + iv.Value + " " + iv.Key.pf + "\n";
                         
                     }
 
-                win.text = "";
-                win.text = "Hi. This is Ashley and Aakash. You have " + kc + " items. Worth " + point + " points.";
+                //win.text = "";
+                //win.text = "Hi. This is Ashley and Aakash. You have " + kc + " items. Worth " + point + " points.";
+
+                score.text = "Your total score is " + point;
             
 
         }
@@ -215,7 +229,7 @@ public class TreasureHunter : MonoBehaviour
             {
                 win.fontSize = 20;
                 win.font.material.color = Color.blue;
-                win.text = "Hi Ashley" + outHit.transform.gameObject.name;
+                //win.text = "Hi Ashley" + outHit.transform.gameObject.name;
                 print("RAY RAY RAY!");
                 var selection = outHit.transform;
             if (selection.CompareTag(selectableTag))
@@ -353,6 +367,12 @@ public class TreasureHunter : MonoBehaviour
                 // foreach (CollectibleTreasure t in invent.dict){
                 //     point += t.value;
                 // }
+
+                int numCylinder = 0;
+                int numCapsule = 0;
+                int numCube = 0;
+                int numSphere = 0;
+            
                 
                  foreach(KeyValuePair<CollectibleTreasure,int> iv in invent.dict)
                     {
@@ -361,21 +381,25 @@ public class TreasureHunter : MonoBehaviour
                         point += invent.dict[iv.Key]*iv.Key.value;
                         print(invent.dict[iv.Key]);
 
-                        Debug.Log(iv.Key);
-                        Debug.Log(iv.Value);
+                        print(iv.Key);
+                        print(iv.Value);
                         
                     }
 
-                win.text = "somethingsomething";
-                win.text = "Hi. This is Ashley and Aakash. You have " + kc + " items. Worth " + point + " points.";
+                //win.text = "somethingsomething";
+                //win.text = "Hi. This is Ashley and Aakash. You have " + kc + " items. Worth " + point + " points.";
+
+                // win.text = "Hi.  This is Ashley and Aakash. /n You have " + numCylinder + " cylinders. /n You have " +
+                //             numCapsule + "capsules.  /n You have " + numCube + " cubes.  /n You have" + numSphere + 
+                //             "spheres.  /n Your total score is " + point;
             }
 
 
-            if(invent.colTres.Count == 3){
-                print("Dude, you win.");
-                score.fontSize = 33;
-                score.text = "Dude. You Win. This is Aakash again.";
-            }
+            // if(invent.colTres.Count == 3){
+            //     print("Dude, you win.");
+            //     score.fontSize = 33;
+            //     score.text = "Dude. You Win. This is Aakash again.";
+            // }
 
         }
         
