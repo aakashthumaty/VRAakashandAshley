@@ -97,8 +97,9 @@ public class TreasureHunter : MonoBehaviour
                 //there's actually a problem here relative to the UE4 version since Unity doesn't have this simple "simulate physics" option
                 //The object will NOT preserve momentum when you throw it like in UE4.
                 //need to set its velocity itself.... even if you switch the kinematic/gravity settings around instead of deleting/adding rb
-                Rigidbody newRB=target.AddComponent<Rigidbody>();
-                newRB.velocity=oldParentVelocity;
+                //maybe dont comment out this next line
+                //Rigidbody newRB=target.AddComponent<Rigidbody>();
+                //newRB.velocity=oldParentVelocity;
             }
         }
     }
@@ -116,10 +117,11 @@ public class TreasureHunter : MonoBehaviour
     }
 
     void letGo(){
-
+        win.text = "not even letgo";
+        if(thingIGrabbed){
         detachGameObject(thingIGrabbed.gameObject,AttachmentRule.KeepWorld,AttachmentRule.KeepWorld,AttachmentRule.KeepWorld);
         simulatePhysics(thingIGrabbed.gameObject,Vector3.zero,true);
-
+        win.text = "let go but nothing else.";
         float firstx, firsty, firstz, secondx, secondy, secondz;
         firstx = rightPointerObject.transform.position.x;
         firsty = rightPointerObject.transform.position.y;
@@ -130,8 +132,8 @@ public class TreasureHunter : MonoBehaviour
         
         myv = new Vector3(firstx - secondx, firsty - secondy, firstz - secondz);
         
-        if (myv.x <= 0.2 && myv.y <= 0.2 && myv.z <= 0.2){
-            print("OMG SELECTED!!!");
+        if (myv.x <= 0.5 && myv.y <= 0.5 && myv.z <= 0.5){
+            print("OMG SELECTED!!! woot woot woot");
             win.text = "added to waist";
 
             var v = thingIGrabbed.gameObject.GetComponent<CollectibleTreasure>();
@@ -139,22 +141,29 @@ public class TreasureHunter : MonoBehaviour
             var n = v.pf;
             win.text = n;
             int count;
-            invent.dict.TryGetValue((CollectibleTreasure)Resources.Load("Assets/" + n, typeof(CollectibleTreasure)), out count);
-            invent.dict[(CollectibleTreasure)Resources.Load("Assets/" + n, typeof(CollectibleTreasure))] = count + 1;
+            print(v.name);
+            print(n);
+            invent.dict.TryGetValue((CollectibleTreasure)Resources.Load(n, typeof(CollectibleTreasure)), out count);
+            invent.dict[(CollectibleTreasure)Resources.Load(n, typeof(CollectibleTreasure))] = count + 1;
 
             Destroy(thingIGrabbed.gameObject);
 
             int point = 0;
             int kc = 0;
+            score.fontSize = 40;
+            score.font.material.color = Color.red;
+            score.text = "got here 1";
             foreach(KeyValuePair<CollectibleTreasure,int> iv in invent.dict)
                     {
-                        
+                        print("this is the invent stuff: " + invent.dict);
+                        print(iv);
                         kc += invent.dict[iv.Key];
                         point += invent.dict[iv.Key]*iv.Key.value;
                         print(invent.dict[iv.Key]);
 
                         Debug.Log(iv.Key);
                         Debug.Log(iv.Value);
+                        score.text = "got here 2";
                         
                     }
 
@@ -185,6 +194,7 @@ public class TreasureHunter : MonoBehaviour
         //         thingIGrabbed=null;
         //     }
         // }
+        }
     }
 
     // Update is called once per frame
@@ -356,7 +366,7 @@ public class TreasureHunter : MonoBehaviour
                         
                     }
 
-                win.text = "";
+                win.text = "somethingsomething";
                 win.text = "Hi. This is Ashley and Aakash. You have " + kc + " items. Worth " + point + " points.";
             }
 

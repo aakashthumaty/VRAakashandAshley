@@ -8085,6 +8085,7 @@ MonoBehaviour:
   defaultMaterial: {fileID: 2100000, guid: 4f0bb7c7f0bfb2943bdce5930449225e, type: 2}
   leftPointerObject: {fileID: 1744936529}
   rightPointerObject: {fileID: 1208717556}
+  selfGO: {fileID: 1348123216}
 --- !u!54 &668646816
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15567,6 +15568,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12af8cb8ef9584aaeafda2d3f4c6f689, type: 3}
+--- !u!1 &1348123216 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: 126d619cf4daa52469682f85c1378b4a,
+    type: 3}
+  m_PrefabInstance: {fileID: 444521428}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1351897533
 GameObject:
   m_ObjectHideFlags: 0
