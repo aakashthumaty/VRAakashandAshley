@@ -27,6 +27,7 @@ public class TreasureHunter : MonoBehaviour
     CollectibleTreasure thingIGrabbed;
 
     Vector3 previousPointerPos;
+    Vector3 myv;
 
 //selectable ness
 
@@ -38,7 +39,7 @@ public class TreasureHunter : MonoBehaviour
 
     public GameObject leftPointerObject;
     public GameObject rightPointerObject;
-
+    public GameObject selfGO;
 
 
     void Start()
@@ -106,7 +107,7 @@ public class TreasureHunter : MonoBehaviour
         print("yo you force grabbed");
         RaycastHit outHit;
         //notice I'm using the layer mask again
-        if (Physics.Raycast(rightPointerObject.transform.position, rightPointerObject.transform.forward, out outHit, 100.0f))//,collectiblesMask))
+        if (Physics.Raycast(rightPointerObject.transform.position, rightPointerObject.transform.forward, out outHit, 1000.0f))//,collectiblesMask))
         {
             AttachmentRule howToAttach=pressedA?AttachmentRule.KeepWorld:AttachmentRule.SnapToTarget;
             attachGameObjectToAChildGameObject(outHit.collider.gameObject,rightPointerObject.gameObject,howToAttach,howToAttach,AttachmentRule.KeepWorld,true);
@@ -115,22 +116,75 @@ public class TreasureHunter : MonoBehaviour
     }
 
     void letGo(){
-        if (thingIGrabbed){
-            Collider[] overlappingThingsWithLeftHand=Physics.OverlapSphere(leftPointerObject.transform.position,0.01f);
-            if (overlappingThingsWithLeftHand.Length>0){
-                // if (thingOnGun){
-                //     detachGameObject(thingOnGun,AttachmentRule.KeepWorld,AttachmentRule.KeepWorld,AttachmentRule.KeepWorld);
-                //     simulatePhysics(thingOnGun,Vector3.zero,true);
-                // }
-                attachGameObjectToAChildGameObject(overlappingThingsWithLeftHand[0].gameObject,leftPointerObject,AttachmentRule.SnapToTarget,AttachmentRule.SnapToTarget,AttachmentRule.KeepWorld,true);
-                //thingOnGun=overlappingThingsWithLeftHand[0].gameObject;
-                thingIGrabbed=null;
-            }else{
-                detachGameObject(thingIGrabbed.gameObject,AttachmentRule.KeepWorld,AttachmentRule.KeepWorld,AttachmentRule.KeepWorld);
-                simulatePhysics(thingIGrabbed.gameObject,(rightPointerObject.gameObject.transform.position-previousPointerPos)/Time.deltaTime,true);
-                thingIGrabbed=null;
-            }
+
+        detachGameObject(thingIGrabbed.gameObject,AttachmentRule.KeepWorld,AttachmentRule.KeepWorld,AttachmentRule.KeepWorld);
+        simulatePhysics(thingIGrabbed.gameObject,Vector3.zero,true);
+
+        float firstx, firsty, firstz, secondx, secondy, secondz;
+        firstx = rightPointerObject.transform.position.x;
+        firsty = rightPointerObject.transform.position.y;
+        firstz = rightPointerObject.transform.position.z;
+        secondx = selfGO.transform.position.x;
+        secondy = selfGO.transform.position.y;
+        secondz = selfGO.transform.position.z;
+        
+        myv = new Vector3(firstx - secondx, firsty - secondy, firstz - secondz);
+        
+        if (myv.x <= 0.2 && myv.y <= 0.2 && myv.z <= 0.2){
+            print("OMG SELECTED!!!");
+            win.text = "added to waist";
+
+            var v = thingIGrabbed.gameObject.GetComponent<CollectibleTreasure>();
+            print(v.value);
+            var n = v.pf;
+            win.text = n;
+            int count;
+            invent.dict.TryGetValue((CollectibleTreasure)Resources.Load("Assets/" + n, typeof(CollectibleTreasure)), out count);
+            invent.dict[(CollectibleTreasure)Resources.Load("Assets/" + n, typeof(CollectibleTreasure))] = count + 1;
+
+            Destroy(thingIGrabbed.gameObject);
+
+            int point = 0;
+            int kc = 0;
+            foreach(KeyValuePair<CollectibleTreasure,int> iv in invent.dict)
+                    {
+                        
+                        kc += invent.dict[iv.Key];
+                        point += invent.dict[iv.Key]*iv.Key.value;
+                        print(invent.dict[iv.Key]);
+
+                        Debug.Log(iv.Key);
+                        Debug.Log(iv.Value);
+                        
+                    }
+
+                win.text = "";
+                win.text = "Hi. This is Ashley and Aakash. You have " + kc + " items. Worth " + point + " points.";
+            
+
         }
+        //myv = Vector3.Distance(rightPointerObject.transform.position, selfGO.transform.position);
+
+    
+        //second param : (thingIGrabbed.gameObject.transform.position-previousPointerPos)/Time.deltaTime
+
+
+        // if (thingIGrabbed){
+        //     Collider[] overlappingThingsWithLeftHand=Physics.OverlapSphere(leftPointerObject.transform.position,0.01f);
+        //     if (overlappingThingsWithLeftHand.Length>0){
+        //         // if (thingOnGun){
+        //         //     detachGameObject(thingOnGun,AttachmentRule.KeepWorld,AttachmentRule.KeepWorld,AttachmentRule.KeepWorld);
+        //         //     simulatePhysics(thingOnGun,Vector3.zero,true);
+        //         // }
+        //         attachGameObjectToAChildGameObject(overlappingThingsWithLeftHand[0].gameObject,leftPointerObject,AttachmentRule.SnapToTarget,AttachmentRule.SnapToTarget,AttachmentRule.KeepWorld,true);
+        //         //thingOnGun=overlappingThingsWithLeftHand[0].gameObject;
+        //         thingIGrabbed=null;
+        //     }else{
+        //         detachGameObject(thingIGrabbed.gameObject,AttachmentRule.KeepWorld,AttachmentRule.KeepWorld,AttachmentRule.KeepWorld);
+        //         simulatePhysics(thingIGrabbed.gameObject,(rightPointerObject.gameObject.transform.position-previousPointerPos)/Time.deltaTime,true);
+        //         thingIGrabbed=null;
+        //     }
+        // }
     }
 
     // Update is called once per frame
@@ -144,10 +198,10 @@ public class TreasureHunter : MonoBehaviour
             currentSelected = null;
         }
         ///oculus raycasting
-        if (OVRInput.GetDown(OVRInput.RawButton.RIndexTrigger) || Input.anyKey){
+        if (OVRInput.GetDown(OVRInput.RawButton.A)){
             //var ray = 
             RaycastHit outHit;
-            if (Physics.Raycast(rightPointerObject.transform.position, rightPointerObject.transform.forward, out outHit, 100.0f))
+            if (Physics.Raycast(rightPointerObject.transform.position, rightPointerObject.transform.forward, out outHit, 1000.0f))
             {
                 win.fontSize = 20;
                 win.font.material.color = Color.blue;
@@ -186,6 +240,8 @@ public class TreasureHunter : MonoBehaviour
                 currentSelected = selection;
             }
             }
+        }else if (OVRInput.GetUp(OVRInput.RawButton.A) ){
+            letGo();
         }
 
     /////selectableness

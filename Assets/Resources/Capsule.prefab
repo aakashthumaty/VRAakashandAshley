@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4321206854766706640}
   - component: {fileID: 6557428384947260291}
   - component: {fileID: 3869815940322286798}
+  - component: {fileID: 7020063336949439977}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Selectable
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 5127937937403408956}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.4131901, y: 1, z: 1.0166163}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -108,3 +109,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   value: 50
   pf: Capsule
+--- !u!54 &7020063336949439977
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5127937937403408956}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
