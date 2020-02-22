@@ -40,10 +40,13 @@ public class TreasureHunter : MonoBehaviour
     public GameObject leftPointerObject;
     public GameObject rightPointerObject;
     public GameObject selfGO;
-
+    public GameObject tth;
 
     void Start()
     {
+
+        
+        tth.SetActive(false);
         //score = GetComponent<TextMesh>();
         invent.treasureInventory = new int[] {0,0,0};
         score.text = "";
@@ -119,6 +122,15 @@ public class TreasureHunter : MonoBehaviour
     void letGo(){
         //win.text = "not even letgo";
         if(thingIGrabbed){
+            print("first for loop for slender man");
+
+            var check = thingIGrabbed.gameObject.GetComponent<trapbox>();
+            if(check){
+                tth.SetActive(true);
+                print("second for loop for slender man");
+                
+            }
+
         detachGameObject(thingIGrabbed.gameObject,AttachmentRule.KeepWorld,AttachmentRule.KeepWorld,AttachmentRule.KeepWorld);
         simulatePhysics(thingIGrabbed.gameObject,Vector3.zero,true);
         //win.text = "let go but nothing else.";
@@ -236,25 +248,7 @@ public class TreasureHunter : MonoBehaviour
             if (selection.CompareTag(selectableTag))
             {
                 forceGrab(false);
-                foreach (char c in Input.inputString){
-                    
-                    if(c == 'g'){
-                        print("OMG SELECTED!!!");
 
-                        var valiii = selection.gameObject.GetComponent<CollectibleTreasure>();
-                        print(valiii.value);
-                        var n = valiii.pf;
-
-                        int count;
-                        invent.dict.TryGetValue((CollectibleTreasure)Resources.Load("Assets/" + n, typeof(CollectibleTreasure)), out count);
-                        invent.dict[(CollectibleTreasure)Resources.Load("Assets/" + n, typeof(CollectibleTreasure))] = count + 1;
-
-                        Destroy(selection.gameObject);
-                    }
-
-                }
-
-                
                 var selectionRenderer = selection.GetComponent<Renderer>();
 
                 if (selectionRenderer != null)
