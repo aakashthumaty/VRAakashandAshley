@@ -124,7 +124,7 @@ public class TreasureHunter : MonoBehaviour
         if(thingIGrabbed){
             print("first for loop for slender man");
 
-            var check = thingIGrabbed.gameObject.GetComponent<trapbox>();
+            var check = thingIGrabbed.gameObject.GetComponent<Trapbox>();
             if(check){
                 tth.SetActive(true);
                 print("second for loop for slender man");
