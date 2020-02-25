@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6186816297417945936}
   - component: {fileID: 7106785349446748618}
   - component: {fileID: 3734742216263059589}
+  - component: {fileID: -5870829124875003772}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Selectable
@@ -107,3 +108,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   value: 100
   pf: Sphere
+--- !u!54 &-5870829124875003772
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7394755446095306351}
+  serializedVersion: 2
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

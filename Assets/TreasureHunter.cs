@@ -127,7 +127,10 @@ public class TreasureHunter : MonoBehaviour
             var check = thingIGrabbed.gameObject.GetComponent<Trapbox>();
             if(check){
                 tth.SetActive(true);
+                win.text = " ";
+                score.text = " ";
                 print("second for loop for slender man");
+                return;
                 
             }
 

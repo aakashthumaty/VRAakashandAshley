@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4129472344001919966}
   - component: {fileID: 7554313655376546143}
   - component: {fileID: 8156745524019402597}
+  - component: {fileID: 9136535631878103924}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Selectable
@@ -108,3 +109,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   value: 1000
   pf: Cylinder
+--- !u!54 &9136535631878103924
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4944519956285080201}
+  serializedVersion: 2
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
