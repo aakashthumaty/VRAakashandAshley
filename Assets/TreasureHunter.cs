@@ -22,6 +22,8 @@ public class TreasureHunter : MonoBehaviour
 
     public TextMesh win;
 
+    public TextMesh A7Text;
+
     public TextMesh score;
 
     CollectibleTreasure thingIGrabbed;
@@ -42,6 +44,8 @@ public class TreasureHunter : MonoBehaviour
     public GameObject selfGO;
     public GameObject tth;
 
+    private int deletedCount = 0;
+
     void Start()
     {
 
@@ -51,6 +55,7 @@ public class TreasureHunter : MonoBehaviour
         invent.treasureInventory = new int[] {0,0,0};
         score.text = "";
         win.text = "";
+        A7Text.text = "";
 
     }
 
@@ -265,6 +270,36 @@ public class TreasureHunter : MonoBehaviour
         }else if (OVRInput.GetUp(OVRInput.RawButton.A) ){
             letGo();
         }
+
+    //new proximity based selectableness
+        //var raySeven = Camera.main.ScreenPointToRay(this.transform.forward);
+        RaycastHit hit;
+        //var realcast = ;
+        //Debug.DrawRay(raySeven.origin, raySeven.direction * 10, Color.yellow);
+         
+         if (Physics.Raycast(selfGO.transform.position, selfGO.transform.forward, out hit, 1))
+         {
+             print("you raycasted");
+
+             foreach (char c in Input.inputString){
+                 if(c == 'g'){
+                    Destroy(hit.transform.gameObject);
+                    deletedCount++;
+                 }
+             }
+
+             
+             if (deletedCount >= 5){
+                A7Text.fontSize = 10;
+                A7Text.font.material.color = Color.blue;
+                A7Text.text = "This is Ashley and Aakash. You Won. Yay.";
+             }
+         }
+
+
+
+
+    //end of proxmity selectableness 
 
     /////selectableness
 

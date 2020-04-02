@@ -14,8 +14,9 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField]
-    private Rigidbody rb;
+    
+    //[SerializeField]
+    //private Rigidbody rb;
 
     private Vector3 iv;
     private float speed;
@@ -24,7 +25,7 @@ public class Movement : MonoBehaviour
     void Start()
     {
 
-        rb = GetComponent<Rigidbody>();
+        //rb = GetComponent<Rigidbody>();
         speed = 5;
         
     }
@@ -32,11 +33,11 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
      private void Update() {
         //print(Input.GetAxis("Horizontal"));
-        rb.velocity = Vector3.right;
+        //rb.velocity = Vector3.right;
 
 
         iv = new Vector3(Input.GetAxisRaw("Horizontal")*speed, 0, Input.GetAxisRaw("Vertical")*speed);
-        rb.velocity = iv;
+        //rb.velocity = iv;
 
  
      }
