@@ -32,11 +32,46 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
      private void Update() {
         //print(Input.GetAxis("Horizontal"));
-        rb.velocity = Vector3.right;
+
+        // if (Input.GetKey(KeyCode.A))
+        //      rb.AddForce(Vector3.left);
+        //  if (Input.GetKey(KeyCode.D))
+        //      rb.AddForce(Vector3.right);
+        //  if (Input.GetKey(KeyCode.W))
+        //      rb.AddForce(Vector3.up);
+        //  if (Input.GetKey(KeyCode.S))
+        //      rb.AddForce(Vector3.down);
+
+        //rb.velocity = Vector3.right;
 
 
         iv = new Vector3(Input.GetAxisRaw("Horizontal")*speed, 0, Input.GetAxisRaw("Vertical")*speed);
-        rb.velocity = iv;
+
+
+        var input = iv.normalized;
+ 
+     Vector3 temp = Vector3.zero;
+     if (input.z == 1)
+     {
+         temp += transform.forward;
+     }
+     else if (input.z == -1)
+     {
+         temp += transform.forward * -1;
+     }
+ 
+     if (input.x == 1)
+     {
+         temp += transform.right;
+     }
+     else if (input.x == -1)
+     {
+         temp += transform.right * -1;
+     }
+
+    Vector3 vel = temp * speed;
+    vel.y = 0;
+        rb.velocity = vel;
 
  
      }
