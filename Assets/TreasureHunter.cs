@@ -130,6 +130,7 @@ public class TreasureHunter : MonoBehaviour
             score.text = "This is Ashley and Aakash. \n You have collected " + countObjectsCollected + " items.  \n Collect 10 to win.";
             if(countObjectsCollected == 10) {
                 score.text = "";
+                win.fontSize = 100;
                 win.text = "This is Ashley and Aakash. \n You collected 10 items and you win!!";
             }
             //print(thingIGrabbed);
