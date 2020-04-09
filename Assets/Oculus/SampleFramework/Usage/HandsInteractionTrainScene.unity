@@ -350,7 +350,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 53
+  m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &6674796
 GameObject:
@@ -538,15 +538,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43300f764e354d642abf0f0dbb612011, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Preset: 2
+  Preset: 0
   Value:
-    LowFreqAbsorption: 0.05
-    MidFreqAbsorption: 0.07
-    HighFreqAbsorption: 0.08
-    Scattering: 0.05
-    LowFreqTransmission: 0.015
-    MidFreqTransmission: 0.002
-    HighFreqTransmission: 0.001
+    LowFreqAbsorption: 0
+    MidFreqAbsorption: 0
+    HighFreqAbsorption: 0
+    Scattering: 0
+    LowFreqTransmission: 0
+    MidFreqTransmission: 0
+    HighFreqTransmission: 0
 --- !u!114 &23509989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -692,7 +692,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 91
+  m_RootOrder: 89
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &26794107
 GameObject:
@@ -923,7 +923,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 111
+  m_RootOrder: 109
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &27615095
 GameObject:
@@ -1622,7 +1622,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 131
+  m_RootOrder: 129
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &86347347
 GameObject:
@@ -1853,7 +1853,7 @@ Transform:
   m_LocalScale: {x: 13, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 55
+  m_RootOrder: 53
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &89921349
 GameObject:
@@ -2090,15 +2090,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43300f764e354d642abf0f0dbb612011, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Preset: 2
+  Preset: 0
   Value:
-    LowFreqAbsorption: 0.05
-    MidFreqAbsorption: 0.07
-    HighFreqAbsorption: 0.08
-    Scattering: 0.05
-    LowFreqTransmission: 0.015
-    MidFreqTransmission: 0.002
-    HighFreqTransmission: 0.001
+    LowFreqAbsorption: 0
+    MidFreqAbsorption: 0
+    HighFreqAbsorption: 0
+    Scattering: 0
+    LowFreqTransmission: 0
+    MidFreqTransmission: 0
+    HighFreqTransmission: 0
 --- !u!114 &99731363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2244,7 +2244,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 61
+  m_RootOrder: 59
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &102490434
 GameObject:
@@ -2871,7 +2871,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 66
+  m_RootOrder: 64
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &130028946
 GameObject:
@@ -3065,13 +3065,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Preset: 0
   Value:
-    LowFreqAbsorption: 0.1
-    MidFreqAbsorption: 0.2
-    HighFreqAbsorption: 0.3
-    Scattering: 0.05
-    LowFreqTransmission: 0.1
-    MidFreqTransmission: 0.05
-    HighFreqTransmission: 0.03
+    LowFreqAbsorption: 0
+    MidFreqAbsorption: 0
+    HighFreqAbsorption: 0
+    Scattering: 0
+    LowFreqTransmission: 0
+    MidFreqTransmission: 0
+    HighFreqTransmission: 0
 --- !u!114 &144913101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3217,7 +3217,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 125
+  m_RootOrder: 123
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &144972704
 GameObject:
@@ -3682,7 +3682,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 112
+  m_RootOrder: 110
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &160590718
 PrefabInstance:
@@ -4299,7 +4299,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 106
+  m_RootOrder: 104
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &206228639
 GameObject:
@@ -4622,12 +4622,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 226161307}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 8, z: 20}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 15}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_Father: {fileID: 854460676}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &227006526
 GameObject:
@@ -5783,13 +5783,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Preset: 0
   Value:
-    LowFreqAbsorption: 0.1
-    MidFreqAbsorption: 0.2
-    HighFreqAbsorption: 0.3
-    Scattering: 0.05
-    LowFreqTransmission: 0.1
-    MidFreqTransmission: 0.05
-    HighFreqTransmission: 0.03
+    LowFreqAbsorption: 0
+    MidFreqAbsorption: 0
+    HighFreqAbsorption: 0
+    Scattering: 0
+    LowFreqTransmission: 0
+    MidFreqTransmission: 0
+    HighFreqTransmission: 0
 --- !u!114 &308009019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5935,7 +5935,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 72
+  m_RootOrder: 70
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &313399967
 GameObject:
@@ -5973,13 +5973,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Preset: 0
   Value:
-    LowFreqAbsorption: 0.1
-    MidFreqAbsorption: 0.2
-    HighFreqAbsorption: 0.3
-    Scattering: 0.05
-    LowFreqTransmission: 0.1
-    MidFreqTransmission: 0.05
-    HighFreqTransmission: 0.03
+    LowFreqAbsorption: 0
+    MidFreqAbsorption: 0
+    HighFreqAbsorption: 0
+    Scattering: 0
+    LowFreqTransmission: 0
+    MidFreqTransmission: 0
+    HighFreqTransmission: 0
 --- !u!114 &313399970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6125,7 +6125,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 78
+  m_RootOrder: 76
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &314677834
 GameObject:
@@ -6906,13 +6906,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Preset: 0
   Value:
-    LowFreqAbsorption: 0.1
-    MidFreqAbsorption: 0.2
-    HighFreqAbsorption: 0.3
-    Scattering: 0.05
-    LowFreqTransmission: 0.1
-    MidFreqTransmission: 0.05
-    HighFreqTransmission: 0.03
+    LowFreqAbsorption: 0
+    MidFreqAbsorption: 0
+    HighFreqAbsorption: 0
+    Scattering: 0
+    LowFreqTransmission: 0
+    MidFreqTransmission: 0
+    HighFreqTransmission: 0
 --- !u!114 &342422066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7058,7 +7058,7 @@ Transform:
   m_LocalScale: {x: 19, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 86
+  m_RootOrder: 84
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &347252678
 GameObject:
@@ -7174,13 +7174,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Preset: 0
   Value:
-    LowFreqAbsorption: 0.1
-    MidFreqAbsorption: 0.2
-    HighFreqAbsorption: 0.3
-    Scattering: 0.05
-    LowFreqTransmission: 0.1
-    MidFreqTransmission: 0.05
-    HighFreqTransmission: 0.03
+    LowFreqAbsorption: 0
+    MidFreqAbsorption: 0
+    HighFreqAbsorption: 0
+    Scattering: 0
+    LowFreqTransmission: 0
+    MidFreqTransmission: 0
+    HighFreqTransmission: 0
 --- !u!114 &363762684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7326,7 +7326,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 62
+  m_RootOrder: 60
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &372747779
 GameObject:
@@ -7557,7 +7557,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 48
+  m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &381290932
 GameObject:
@@ -7751,13 +7751,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Preset: 0
   Value:
-    LowFreqAbsorption: 0.1
-    MidFreqAbsorption: 0.2
-    HighFreqAbsorption: 0.3
-    Scattering: 0.05
-    LowFreqTransmission: 0.1
-    MidFreqTransmission: 0.05
-    HighFreqTransmission: 0.03
+    LowFreqAbsorption: 0
+    MidFreqAbsorption: 0
+    HighFreqAbsorption: 0
+    Scattering: 0
+    LowFreqTransmission: 0
+    MidFreqTransmission: 0
+    HighFreqTransmission: 0
 --- !u!114 &388141840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7903,7 +7903,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 84
+  m_RootOrder: 82
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &388659043
 GameObject:
@@ -7941,13 +7941,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Preset: 0
   Value:
-    LowFreqAbsorption: 0.1
-    MidFreqAbsorption: 0.2
-    HighFreqAbsorption: 0.3
-    Scattering: 0.05
-    LowFreqTransmission: 0.1
-    MidFreqTransmission: 0.05
-    HighFreqTransmission: 0.03
+    LowFreqAbsorption: 0
+    MidFreqAbsorption: 0
+    HighFreqAbsorption: 0
+    Scattering: 0
+    LowFreqTransmission: 0
+    MidFreqTransmission: 0
+    HighFreqTransmission: 0
 --- !u!114 &388659045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8093,7 +8093,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 124
+  m_RootOrder: 122
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &391235312
 GameObject:
@@ -8324,7 +8324,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 81
+  m_RootOrder: 79
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &398949182
 GameObject:
@@ -8555,7 +8555,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 120
+  m_RootOrder: 118
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &407032323
 GameObject:
@@ -8593,13 +8593,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Preset: 0
   Value:
-    LowFreqAbsorption: 0.1
-    MidFreqAbsorption: 0.2
-    HighFreqAbsorption: 0.3
-    Scattering: 0.05
-    LowFreqTransmission: 0.1
-    MidFreqTransmission: 0.05
-    HighFreqTransmission: 0.03
+    LowFreqAbsorption: 0
+    MidFreqAbsorption: 0
+    HighFreqAbsorption: 0
+    Scattering: 0
+    LowFreqTransmission: 0
+    MidFreqTransmission: 0
+    HighFreqTransmission: 0
 --- !u!114 &407032326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8745,7 +8745,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 75
+  m_RootOrder: 73
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &407329179
 GameObject:
@@ -8898,7 +8898,7 @@ Transform:
   m_LocalScale: {x: 10, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 54
+  m_RootOrder: 52
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &409873290
 GameObject:
@@ -9067,11 +9067,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 411199948}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.6, y: 0.4, z: 0}
+  m_LocalPosition: {x: 7.2, y: 0.4, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 40
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &411199953
 MonoBehaviour:
@@ -9397,7 +9397,7 @@ PrefabInstance:
     - target: {fileID: 4706659725229918128, guid: 12af8cb8ef9584aaeafda2d3f4c6f689,
         type: 3}
       propertyPath: m_RootOrder
-      value: 137
+      value: 135
       objectReference: {fileID: 0}
     - target: {fileID: 4706659725229918128, guid: 12af8cb8ef9584aaeafda2d3f4c6f689,
         type: 3}
@@ -9435,12 +9435,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   directBinaural: 1
-  interpolation: 1
-  physicsBasedAttenuation: 1
-  airAbsorption: 1
+  interpolation: 0
+  physicsBasedAttenuation: 0
+  airAbsorption: 0
   dipoleWeight: 0
   dipolePower: 0
-  occlusionMode: 1
+  occlusionMode: 0
   occlusionMethod: 0
   sourceRadius: 1
   directMixLevel: 1
@@ -9609,13 +9609,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Preset: 0
   Value:
-    LowFreqAbsorption: 0.1
-    MidFreqAbsorption: 0.2
-    HighFreqAbsorption: 0.3
-    Scattering: 0.05
-    LowFreqTransmission: 0.1
-    MidFreqTransmission: 0.05
-    HighFreqTransmission: 0.03
+    LowFreqAbsorption: 0
+    MidFreqAbsorption: 0
+    HighFreqAbsorption: 0
+    Scattering: 0
+    LowFreqTransmission: 0
+    MidFreqTransmission: 0
+    HighFreqTransmission: 0
 --- !u!114 &428525044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9761,7 +9761,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 58
+  m_RootOrder: 56
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &429524591
 GameObject:
@@ -9929,6 +9929,14 @@ PrefabInstance:
     - target: {fileID: 100004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_Name
       value: TreasureHunter
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10817,7 +10825,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 67
+  m_RootOrder: 65
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &510019383
 GameObject:
@@ -11048,7 +11056,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 129
+  m_RootOrder: 127
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &526378577
 GameObject:
@@ -11575,7 +11583,7 @@ PrefabInstance:
     - target: {fileID: 4706659725229918128, guid: 12af8cb8ef9584aaeafda2d3f4c6f689,
         type: 3}
       propertyPath: m_RootOrder
-      value: 139
+      value: 137
       objectReference: {fileID: 0}
     - target: {fileID: 4706659725229918128, guid: 12af8cb8ef9584aaeafda2d3f4c6f689,
         type: 3}
@@ -11613,12 +11621,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   directBinaural: 1
-  interpolation: 1
-  physicsBasedAttenuation: 1
-  airAbsorption: 1
+  interpolation: 0
+  physicsBasedAttenuation: 0
+  airAbsorption: 0
   dipoleWeight: 0
   dipolePower: 0
-  occlusionMode: 1
+  occlusionMode: 0
   occlusionMethod: 0
   sourceRadius: 1
   directMixLevel: 1
@@ -12013,7 +12021,7 @@ PrefabInstance:
     - target: {fileID: 4706659725229918128, guid: 12af8cb8ef9584aaeafda2d3f4c6f689,
         type: 3}
       propertyPath: m_RootOrder
-      value: 97
+      value: 95
       objectReference: {fileID: 0}
     - target: {fileID: 4706659725229918128, guid: 12af8cb8ef9584aaeafda2d3f4c6f689,
         type: 3}
@@ -12051,12 +12059,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   directBinaural: 1
-  interpolation: 1
-  physicsBasedAttenuation: 1
-  airAbsorption: 1
+  interpolation: 0
+  physicsBasedAttenuation: 0
+  airAbsorption: 0
   dipoleWeight: 0
   dipolePower: 0
-  occlusionMode: 1
+  occlusionMode: 0
   occlusionMethod: 0
   sourceRadius: 1
   directMixLevel: 1
@@ -12231,13 +12239,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Preset: 0
   Value:
-    LowFreqAbsorption: 0.1
-    MidFreqAbsorption: 0.2
-    HighFreqAbsorption: 0.3
-    Scattering: 0.05
-    LowFreqTransmission: 0.1
-    MidFreqTransmission: 0.05
-    HighFreqTransmission: 0.03
+    LowFreqAbsorption: 0
+    MidFreqAbsorption: 0
+    HighFreqAbsorption: 0
+    Scattering: 0
+    LowFreqTransmission: 0
+    MidFreqTransmission: 0
+    HighFreqTransmission: 0
 --- !u!114 &602021631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12383,7 +12391,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 77
+  m_RootOrder: 75
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &602872056
 GameObject:
@@ -13238,7 +13246,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 114
+  m_RootOrder: 112
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &663120113
 GameObject:
@@ -13360,6 +13368,7 @@ MonoBehaviour:
   invent: {fileID: 668646814}
   win: {fileID: 226161308}
   score: {fileID: 1981465916}
+  countObjectsCollected: 0
   selectableTag: Selectable
   highlightMaterial: {fileID: 2100000, guid: e4486e58dde90df498b2efdcf4292917, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 4f0bb7c7f0bfb2943bdce5930449225e, type: 2}
@@ -13990,7 +13999,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 43
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &729238905
 GameObject:
@@ -14299,7 +14308,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 51
+  m_RootOrder: 49
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &738468435
 PrefabInstance:
@@ -14838,7 +14847,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 102
+  m_RootOrder: 100
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &757941364
 PrefabInstance:
@@ -15065,7 +15074,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 69
+  m_RootOrder: 67
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &762136447
 GameObject:
@@ -16117,7 +16126,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 68
+  m_RootOrder: 66
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &827295238
 GameObject:
@@ -16278,13 +16287,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Preset: 0
   Value:
-    LowFreqAbsorption: 0.1
-    MidFreqAbsorption: 0.2
-    HighFreqAbsorption: 0.3
-    Scattering: 0.05
-    LowFreqTransmission: 0.1
-    MidFreqTransmission: 0.05
-    HighFreqTransmission: 0.03
+    LowFreqAbsorption: 0
+    MidFreqAbsorption: 0
+    HighFreqAbsorption: 0
+    Scattering: 0
+    LowFreqTransmission: 0
+    MidFreqTransmission: 0
+    HighFreqTransmission: 0
 --- !u!114 &852029537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16430,8 +16439,14 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 107
+  m_RootOrder: 105
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &854460676 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400002, guid: 126d619cf4daa52469682f85c1378b4a,
+    type: 3}
+  m_PrefabInstance: {fileID: 444521428}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &858967644
 GameObject:
   m_ObjectHideFlags: 0
@@ -16624,13 +16639,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Preset: 0
   Value:
-    LowFreqAbsorption: 0.1
-    MidFreqAbsorption: 0.2
-    HighFreqAbsorption: 0.3
-    Scattering: 0.05
-    LowFreqTransmission: 0.1
-    MidFreqTransmission: 0.05
-    HighFreqTransmission: 0.03
+    LowFreqAbsorption: 0
+    MidFreqAbsorption: 0
+    HighFreqAbsorption: 0
+    Scattering: 0
+    LowFreqTransmission: 0
+    MidFreqTransmission: 0
+    HighFreqTransmission: 0
 --- !u!114 &863910783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16776,7 +16791,7 @@ Transform:
   m_LocalScale: {x: 17, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 133
+  m_RootOrder: 131
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &878010966
 GameObject:
@@ -17126,13 +17141,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Preset: 0
   Value:
-    LowFreqAbsorption: 0.1
-    MidFreqAbsorption: 0.2
-    HighFreqAbsorption: 0.3
-    Scattering: 0.05
-    LowFreqTransmission: 0.1
-    MidFreqTransmission: 0.05
-    HighFreqTransmission: 0.03
+    LowFreqAbsorption: 0
+    MidFreqAbsorption: 0
+    HighFreqAbsorption: 0
+    Scattering: 0
+    LowFreqTransmission: 0
+    MidFreqTransmission: 0
+    HighFreqTransmission: 0
 --- !u!114 &888598019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17278,7 +17293,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 126
+  m_RootOrder: 124
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &889040115
 PrefabInstance:
@@ -17753,13 +17768,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Preset: 0
   Value:
-    LowFreqAbsorption: 0.1
-    MidFreqAbsorption: 0.2
-    HighFreqAbsorption: 0.3
-    Scattering: 0.05
-    LowFreqTransmission: 0.1
-    MidFreqTransmission: 0.05
-    HighFreqTransmission: 0.03
+    LowFreqAbsorption: 0
+    MidFreqAbsorption: 0
+    HighFreqAbsorption: 0
+    Scattering: 0
+    LowFreqTransmission: 0
+    MidFreqTransmission: 0
+    HighFreqTransmission: 0
 --- !u!114 &938019583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17905,7 +17920,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 90
+  m_RootOrder: 88
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &944915712
 GameObject:
@@ -18522,7 +18537,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 105
+  m_RootOrder: 103
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &985710981
 GameObject:
@@ -18638,13 +18653,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Preset: 0
   Value:
-    LowFreqAbsorption: 0.1
-    MidFreqAbsorption: 0.2
-    HighFreqAbsorption: 0.3
-    Scattering: 0.05
-    LowFreqTransmission: 0.1
-    MidFreqTransmission: 0.05
-    HighFreqTransmission: 0.03
+    LowFreqAbsorption: 0
+    MidFreqAbsorption: 0
+    HighFreqAbsorption: 0
+    Scattering: 0
+    LowFreqTransmission: 0
+    MidFreqTransmission: 0
+    HighFreqTransmission: 0
 --- !u!114 &986061851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18790,7 +18805,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 73
+  m_RootOrder: 71
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &988012886
 GameObject:
@@ -19299,13 +19314,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Preset: 0
   Value:
-    LowFreqAbsorption: 0.1
-    MidFreqAbsorption: 0.2
-    HighFreqAbsorption: 0.3
-    Scattering: 0.05
-    LowFreqTransmission: 0.1
-    MidFreqTransmission: 0.05
-    HighFreqTransmission: 0.03
+    LowFreqAbsorption: 0
+    MidFreqAbsorption: 0
+    HighFreqAbsorption: 0
+    Scattering: 0
+    LowFreqTransmission: 0
+    MidFreqTransmission: 0
+    HighFreqTransmission: 0
 --- !u!114 &1029382097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19451,7 +19466,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 134
+  m_RootOrder: 132
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1030832743
 GameObject:
@@ -19604,7 +19619,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 128
+  m_RootOrder: 126
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1031889017
 GameObject:
@@ -19835,7 +19850,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 88
+  m_RootOrder: 86
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1032327152
 GameObject:
@@ -20066,7 +20081,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 110
+  m_RootOrder: 108
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1038721115
 GameObject:
@@ -20260,13 +20275,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Preset: 0
   Value:
-    LowFreqAbsorption: 0.1
-    MidFreqAbsorption: 0.2
-    HighFreqAbsorption: 0.3
-    Scattering: 0.05
-    LowFreqTransmission: 0.1
-    MidFreqTransmission: 0.05
-    HighFreqTransmission: 0.03
+    LowFreqAbsorption: 0
+    MidFreqAbsorption: 0
+    HighFreqAbsorption: 0
+    Scattering: 0
+    LowFreqTransmission: 0
+    MidFreqTransmission: 0
+    HighFreqTransmission: 0
 --- !u!114 &1050138172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20412,7 +20427,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 74
+  m_RootOrder: 72
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1052959494
 GameObject:
@@ -20643,7 +20658,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 52
+  m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1070552685
 GameObject:
@@ -20778,7 +20793,7 @@ PrefabInstance:
     - target: {fileID: 4706659725229918128, guid: 12af8cb8ef9584aaeafda2d3f4c6f689,
         type: 3}
       propertyPath: m_RootOrder
-      value: 94
+      value: 92
       objectReference: {fileID: 0}
     - target: {fileID: 4706659725229918128, guid: 12af8cb8ef9584aaeafda2d3f4c6f689,
         type: 3}
@@ -20816,12 +20831,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   directBinaural: 1
-  interpolation: 1
-  physicsBasedAttenuation: 1
-  airAbsorption: 1
+  interpolation: 0
+  physicsBasedAttenuation: 0
+  airAbsorption: 0
   dipoleWeight: 0
   dipolePower: 0
-  occlusionMode: 1
+  occlusionMode: 0
   occlusionMethod: 0
   sourceRadius: 1
   directMixLevel: 1
@@ -21496,7 +21511,7 @@ Transform:
   m_LocalScale: {x: 17, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 113
+  m_RootOrder: 111
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1098183259
 GameObject:
@@ -21727,7 +21742,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 50
+  m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1112896276
 GameObject:
@@ -22558,13 +22573,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Preset: 0
   Value:
-    LowFreqAbsorption: 0.1
-    MidFreqAbsorption: 0.2
-    HighFreqAbsorption: 0.3
-    Scattering: 0.05
-    LowFreqTransmission: 0.1
-    MidFreqTransmission: 0.05
-    HighFreqTransmission: 0.03
+    LowFreqAbsorption: 0
+    MidFreqAbsorption: 0
+    HighFreqAbsorption: 0
+    Scattering: 0
+    LowFreqTransmission: 0
+    MidFreqTransmission: 0
+    HighFreqTransmission: 0
 --- !u!64 &1171040609
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22637,7 +22652,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 60
+  m_RootOrder: 58
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1171361199
 GameObject:
@@ -23001,7 +23016,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 63
+  m_RootOrder: 61
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1183698782
 GameObject:
@@ -23154,7 +23169,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 108
+  m_RootOrder: 106
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1185967781
 GameObject:
@@ -23184,7 +23199,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 38
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1188770968
 GameObject:
@@ -23733,7 +23748,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 119
+  m_RootOrder: 117
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1217962478
 GameObject:
@@ -23886,7 +23901,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 82
+  m_RootOrder: 80
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &1219373799
 PrefabInstance:
@@ -23943,7 +23958,7 @@ PrefabInstance:
     - target: {fileID: 4706659725229918128, guid: 12af8cb8ef9584aaeafda2d3f4c6f689,
         type: 3}
       propertyPath: m_RootOrder
-      value: 92
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 4706659725229918128, guid: 12af8cb8ef9584aaeafda2d3f4c6f689,
         type: 3}
@@ -23981,12 +23996,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   directBinaural: 1
-  interpolation: 1
-  physicsBasedAttenuation: 1
-  airAbsorption: 1
+  interpolation: 0
+  physicsBasedAttenuation: 0
+  airAbsorption: 0
   dipoleWeight: 0
   dipolePower: 0
-  occlusionMode: 1
+  occlusionMode: 0
   occlusionMethod: 0
   sourceRadius: 1
   directMixLevel: 1
@@ -24020,7 +24035,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 3a8a0fdffc52e4e55a73ba6000cbb319, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -24233,13 +24248,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Preset: 0
   Value:
-    LowFreqAbsorption: 0.1
-    MidFreqAbsorption: 0.2
-    HighFreqAbsorption: 0.3
-    Scattering: 0.05
-    LowFreqTransmission: 0.1
-    MidFreqTransmission: 0.05
-    HighFreqTransmission: 0.03
+    LowFreqAbsorption: 0
+    MidFreqAbsorption: 0
+    HighFreqAbsorption: 0
+    Scattering: 0
+    LowFreqTransmission: 0
+    MidFreqTransmission: 0
+    HighFreqTransmission: 0
 --- !u!114 &1223362939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24385,7 +24400,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 83
+  m_RootOrder: 81
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1227732452
 GameObject:
@@ -24618,7 +24633,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 42
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1237363478
 MonoBehaviour:
@@ -24632,15 +24647,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43300f764e354d642abf0f0dbb612011, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Preset: 2
+  Preset: 0
   Value:
-    LowFreqAbsorption: 0.05
-    MidFreqAbsorption: 0.07
-    HighFreqAbsorption: 0.08
+    LowFreqAbsorption: 0.1
+    MidFreqAbsorption: 0.2
+    HighFreqAbsorption: 0.3
     Scattering: 0.05
-    LowFreqTransmission: 0.015
-    MidFreqTransmission: 0.002
-    HighFreqTransmission: 0.001
+    LowFreqTransmission: 0.1
+    MidFreqTransmission: 0.05
+    HighFreqTransmission: 0.03
 --- !u!114 &1237363479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24697,13 +24712,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Preset: 0
   Value:
-    LowFreqAbsorption: 0.1
-    MidFreqAbsorption: 0.2
-    HighFreqAbsorption: 0.3
-    Scattering: 0.05
-    LowFreqTransmission: 0.1
-    MidFreqTransmission: 0.05
-    HighFreqTransmission: 0.03
+    LowFreqAbsorption: 0
+    MidFreqAbsorption: 0
+    HighFreqAbsorption: 0
+    Scattering: 0
+    LowFreqTransmission: 0
+    MidFreqTransmission: 0
+    HighFreqTransmission: 0
 --- !u!114 &1242512889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24849,7 +24864,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 76
+  m_RootOrder: 74
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1251987569
 GameObject:
@@ -25236,7 +25251,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 41
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1291390535
 GameObject:
@@ -25352,13 +25367,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Preset: 0
   Value:
-    LowFreqAbsorption: 0.1
-    MidFreqAbsorption: 0.2
-    HighFreqAbsorption: 0.3
-    Scattering: 0.05
-    LowFreqTransmission: 0.1
-    MidFreqTransmission: 0.05
-    HighFreqTransmission: 0.03
+    LowFreqAbsorption: 0
+    MidFreqAbsorption: 0
+    HighFreqAbsorption: 0
+    Scattering: 0
+    LowFreqTransmission: 0
+    MidFreqTransmission: 0
+    HighFreqTransmission: 0
 --- !u!114 &1298084996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25504,7 +25519,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 70
+  m_RootOrder: 68
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1298645460
 GameObject:
@@ -25657,7 +25672,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 101
+  m_RootOrder: 99
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1300840177
 GameObject:
@@ -25810,7 +25825,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 79
+  m_RootOrder: 77
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1304234373
 GameObject:
@@ -26119,7 +26134,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 127
+  m_RootOrder: 125
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &1317098919 stripped
 Transform:
@@ -26430,7 +26445,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 89
+  m_RootOrder: 87
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1337028372
 GameObject:
@@ -26928,13 +26943,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Preset: 0
   Value:
-    LowFreqAbsorption: 0.1
-    MidFreqAbsorption: 0.2
-    HighFreqAbsorption: 0.3
-    Scattering: 0.05
-    LowFreqTransmission: 0.1
-    MidFreqTransmission: 0.05
-    HighFreqTransmission: 0.03
+    LowFreqAbsorption: 0
+    MidFreqAbsorption: 0
+    HighFreqAbsorption: 0
+    Scattering: 0
+    LowFreqTransmission: 0
+    MidFreqTransmission: 0
+    HighFreqTransmission: 0
 --- !u!114 &1356682494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27080,7 +27095,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 122
+  m_RootOrder: 120
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1359641748
 GameObject:
@@ -27118,13 +27133,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Preset: 0
   Value:
-    LowFreqAbsorption: 0.1
-    MidFreqAbsorption: 0.2
-    HighFreqAbsorption: 0.3
-    Scattering: 0.05
-    LowFreqTransmission: 0.1
-    MidFreqTransmission: 0.05
-    HighFreqTransmission: 0.03
+    LowFreqAbsorption: 0
+    MidFreqAbsorption: 0
+    HighFreqAbsorption: 0
+    Scattering: 0
+    LowFreqTransmission: 0
+    MidFreqTransmission: 0
+    HighFreqTransmission: 0
 --- !u!114 &1359641750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27270,7 +27285,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 57
+  m_RootOrder: 55
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1363286638
 GameObject:
@@ -27635,7 +27650,7 @@ PrefabInstance:
     - target: {fileID: 4706659725229918128, guid: 12af8cb8ef9584aaeafda2d3f4c6f689,
         type: 3}
       propertyPath: m_RootOrder
-      value: 140
+      value: 138
       objectReference: {fileID: 0}
     - target: {fileID: 4706659725229918128, guid: 12af8cb8ef9584aaeafda2d3f4c6f689,
         type: 3}
@@ -27673,12 +27688,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   directBinaural: 1
-  interpolation: 1
-  physicsBasedAttenuation: 1
-  airAbsorption: 1
+  interpolation: 0
+  physicsBasedAttenuation: 0
+  airAbsorption: 0
   dipoleWeight: 0
   dipolePower: 0
-  occlusionMode: 1
+  occlusionMode: 0
   occlusionMethod: 0
   sourceRadius: 1
   directMixLevel: 1
@@ -27847,13 +27862,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Preset: 0
   Value:
-    LowFreqAbsorption: 0.1
-    MidFreqAbsorption: 0.2
-    HighFreqAbsorption: 0.3
-    Scattering: 0.05
-    LowFreqTransmission: 0.1
-    MidFreqTransmission: 0.05
-    HighFreqTransmission: 0.03
+    LowFreqAbsorption: 0
+    MidFreqAbsorption: 0
+    HighFreqAbsorption: 0
+    Scattering: 0
+    LowFreqTransmission: 0
+    MidFreqTransmission: 0
+    HighFreqTransmission: 0
 --- !u!114 &1381722672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27999,7 +28014,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 59
+  m_RootOrder: 57
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1381999943
 GameObject:
@@ -28152,7 +28167,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 98
+  m_RootOrder: 96
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1394157965
 GameObject:
@@ -28691,7 +28706,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 99
+  m_RootOrder: 97
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1424549303
 GameObject:
@@ -28844,7 +28859,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 49
+  m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1425671597
 GameObject:
@@ -29131,7 +29146,7 @@ PrefabInstance:
     - target: {fileID: 4706659725229918128, guid: 12af8cb8ef9584aaeafda2d3f4c6f689,
         type: 3}
       propertyPath: m_RootOrder
-      value: 138
+      value: 136
       objectReference: {fileID: 0}
     - target: {fileID: 4706659725229918128, guid: 12af8cb8ef9584aaeafda2d3f4c6f689,
         type: 3}
@@ -29169,12 +29184,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   directBinaural: 1
-  interpolation: 1
-  physicsBasedAttenuation: 1
-  airAbsorption: 1
+  interpolation: 0
+  physicsBasedAttenuation: 0
+  airAbsorption: 0
   dipoleWeight: 0
   dipolePower: 0
-  occlusionMode: 1
+  occlusionMode: 0
   occlusionMethod: 0
   sourceRadius: 1
   directMixLevel: 1
@@ -29458,7 +29473,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 47
+  m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1453255264
 GameObject:
@@ -29638,7 +29653,7 @@ PrefabInstance:
     - target: {fileID: 4706659725229918128, guid: 12af8cb8ef9584aaeafda2d3f4c6f689,
         type: 3}
       propertyPath: m_RootOrder
-      value: 93
+      value: 91
       objectReference: {fileID: 0}
     - target: {fileID: 4706659725229918128, guid: 12af8cb8ef9584aaeafda2d3f4c6f689,
         type: 3}
@@ -29676,12 +29691,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   directBinaural: 1
-  interpolation: 1
-  physicsBasedAttenuation: 1
-  airAbsorption: 1
+  interpolation: 0
+  physicsBasedAttenuation: 0
+  airAbsorption: 0
   dipoleWeight: 0
   dipolePower: 0
-  occlusionMode: 1
+  occlusionMode: 0
   occlusionMethod: 0
   sourceRadius: 1
   directMixLevel: 1
@@ -31211,7 +31226,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 116
+  m_RootOrder: 114
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1522915541
 GameObject:
@@ -31475,7 +31490,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 117
+  m_RootOrder: 115
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1532764110
 GameObject:
@@ -31706,7 +31721,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 135
+  m_RootOrder: 133
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &1544436539
 PrefabInstance:
@@ -32167,7 +32182,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 136
+  m_RootOrder: 134
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1576488680
 GameObject:
@@ -32320,7 +32335,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 45
+  m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1577828301
 GameObject:
@@ -32445,7 +32460,7 @@ PrefabInstance:
     - target: {fileID: 6801471570482917383, guid: 412e08a851e02417483517c49723c012,
         type: 3}
       propertyPath: m_RootOrder
-      value: 37
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 6801471570482917383, guid: 412e08a851e02417483517c49723c012,
         type: 3}
@@ -32708,7 +32723,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 80
+  m_RootOrder: 78
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1611361687
 GameObject:
@@ -32939,7 +32954,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 64
+  m_RootOrder: 62
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1618414511
 GameObject:
@@ -33248,7 +33263,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 87
+  m_RootOrder: 85
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1633345060 stripped
 GameObject:
@@ -33534,7 +33549,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 109
+  m_RootOrder: 107
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1654861648
 GameObject:
@@ -33821,7 +33836,7 @@ PrefabInstance:
     - target: {fileID: 1339044594968541306, guid: 131416da68dc941fcb05b995f9027929,
         type: 3}
       propertyPath: m_RootOrder
-      value: 35
+      value: 33
       objectReference: {fileID: 0}
     - target: {fileID: 1339044594968541306, guid: 131416da68dc941fcb05b995f9027929,
         type: 3}
@@ -34006,7 +34021,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 103
+  m_RootOrder: 101
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1671649923
 GameObject:
@@ -34122,13 +34137,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Preset: 0
   Value:
-    LowFreqAbsorption: 0.1
-    MidFreqAbsorption: 0.2
-    HighFreqAbsorption: 0.3
-    Scattering: 0.05
-    LowFreqTransmission: 0.1
-    MidFreqTransmission: 0.05
-    HighFreqTransmission: 0.03
+    LowFreqAbsorption: 0
+    MidFreqAbsorption: 0
+    HighFreqAbsorption: 0
+    Scattering: 0
+    LowFreqTransmission: 0
+    MidFreqTransmission: 0
+    HighFreqTransmission: 0
 --- !u!114 &1675555892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34274,7 +34289,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 121
+  m_RootOrder: 119
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1698688169
 GameObject:
@@ -34661,7 +34676,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 44
+  m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1711127305
 GameObject:
@@ -34814,7 +34829,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 118
+  m_RootOrder: 116
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1727074970 stripped
 GameObject:
@@ -34835,12 +34850,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   directBinaural: 1
-  interpolation: 1
-  physicsBasedAttenuation: 1
-  airAbsorption: 1
+  interpolation: 0
+  physicsBasedAttenuation: 0
+  airAbsorption: 0
   dipoleWeight: 0
   dipolePower: 0
-  occlusionMode: 1
+  occlusionMode: 0
   occlusionMethod: 0
   sourceRadius: 1
   directMixLevel: 1
@@ -35198,7 +35213,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 130
+  m_RootOrder: 128
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1741270982
 GameObject:
@@ -35665,7 +35680,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 132
+  m_RootOrder: 130
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1752379267
 GameObject:
@@ -36426,7 +36441,7 @@ PrefabInstance:
     - target: {fileID: 4706659725229918128, guid: 12af8cb8ef9584aaeafda2d3f4c6f689,
         type: 3}
       propertyPath: m_RootOrder
-      value: 95
+      value: 93
       objectReference: {fileID: 0}
     - target: {fileID: 4706659725229918128, guid: 12af8cb8ef9584aaeafda2d3f4c6f689,
         type: 3}
@@ -36464,12 +36479,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   directBinaural: 1
-  interpolation: 1
-  physicsBasedAttenuation: 1
-  airAbsorption: 1
+  interpolation: 0
+  physicsBasedAttenuation: 0
+  airAbsorption: 0
   dipoleWeight: 0
   dipolePower: 0
-  occlusionMode: 1
+  occlusionMode: 0
   occlusionMethod: 0
   sourceRadius: 1
   directMixLevel: 1
@@ -36833,7 +36848,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 56
+  m_RootOrder: 54
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1811336065
 GameObject:
@@ -37142,7 +37157,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 104
+  m_RootOrder: 102
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1820461034
 GameObject:
@@ -37570,13 +37585,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Preset: 0
   Value:
-    LowFreqAbsorption: 0.1
-    MidFreqAbsorption: 0.2
-    HighFreqAbsorption: 0.3
-    Scattering: 0.05
-    LowFreqTransmission: 0.1
-    MidFreqTransmission: 0.05
-    HighFreqTransmission: 0.03
+    LowFreqAbsorption: 0
+    MidFreqAbsorption: 0
+    HighFreqAbsorption: 0
+    Scattering: 0
+    LowFreqTransmission: 0
+    MidFreqTransmission: 0
+    HighFreqTransmission: 0
 --- !u!114 &1886188102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37722,7 +37737,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 85
+  m_RootOrder: 83
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1890988856
 GameObject:
@@ -38109,7 +38124,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 96
+  m_RootOrder: 94
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &1898027912
 PrefabInstance:
@@ -39025,7 +39040,7 @@ PrefabInstance:
     - target: {fileID: 4706659725229918128, guid: 12af8cb8ef9584aaeafda2d3f4c6f689,
         type: 3}
       propertyPath: m_RootOrder
-      value: 36
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 4706659725229918128, guid: 12af8cb8ef9584aaeafda2d3f4c6f689,
         type: 3}
@@ -39209,12 +39224,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1981465915}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1, y: 0.1, z: 30}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.1, y: 1, z: 30}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_Father: {fileID: 854460676}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1982191938
 GameObject:
@@ -39415,7 +39430,7 @@ PrefabInstance:
     - target: {fileID: 4706659725229918128, guid: 12af8cb8ef9584aaeafda2d3f4c6f689,
         type: 3}
       propertyPath: m_RootOrder
-      value: 115
+      value: 113
       objectReference: {fileID: 0}
     - target: {fileID: 4706659725229918128, guid: 12af8cb8ef9584aaeafda2d3f4c6f689,
         type: 3}
@@ -39453,12 +39468,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   directBinaural: 1
-  interpolation: 1
-  physicsBasedAttenuation: 1
-  airAbsorption: 1
+  interpolation: 0
+  physicsBasedAttenuation: 0
+  airAbsorption: 0
   dipoleWeight: 0
   dipolePower: 0
-  occlusionMode: 1
+  occlusionMode: 0
   occlusionMethod: 0
   sourceRadius: 1
   directMixLevel: 1
@@ -40179,13 +40194,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Preset: 0
   Value:
-    LowFreqAbsorption: 0.1
-    MidFreqAbsorption: 0.2
-    HighFreqAbsorption: 0.3
-    Scattering: 0.05
-    LowFreqTransmission: 0.1
-    MidFreqTransmission: 0.05
-    HighFreqTransmission: 0.03
+    LowFreqAbsorption: 0
+    MidFreqAbsorption: 0
+    HighFreqAbsorption: 0
+    Scattering: 0
+    LowFreqTransmission: 0
+    MidFreqTransmission: 0
+    HighFreqTransmission: 0
 --- !u!114 &2028191203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40331,7 +40346,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 123
+  m_RootOrder: 121
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2032398579
 GameObject:
@@ -40484,7 +40499,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 100
+  m_RootOrder: 98
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &2036246358
 GameObject:
@@ -40945,7 +40960,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 46
+  m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &2060862468
 GameObject:
@@ -41176,7 +41191,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 65
+  m_RootOrder: 63
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &2082153521
 GameObject:
@@ -41329,7 +41344,7 @@ Transform:
   m_LocalScale: {x: 15, y: 3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 71
+  m_RootOrder: 69
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &2085729278
 GameObject:
@@ -41951,7 +41966,7 @@ PrefabInstance:
     - target: {fileID: 4893992107807676440, guid: 73cefb7fba0514a6cadff99d9a24eee4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 39
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 4893992107807676440, guid: 73cefb7fba0514a6cadff99d9a24eee4,
         type: 3}

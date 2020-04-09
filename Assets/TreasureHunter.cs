@@ -24,6 +24,8 @@ public class TreasureHunter : MonoBehaviour
 
     public TextMesh score;
 
+    public int countObjectsCollected;
+
     CollectibleTreasure thingIGrabbed;
 
     Vector3 previousPointerPos;
@@ -51,9 +53,11 @@ public class TreasureHunter : MonoBehaviour
     }
 
     public void attachGameObjectToAChildGameObject(GameObject GOToAttach, GameObject newParent, AttachmentRule locationRule, AttachmentRule rotationRule, AttachmentRule scaleRule, bool weld){
+        print("in attach game object");
         GOToAttach.transform.parent=newParent.transform;
         handleAttachmentRules(GOToAttach,locationRule,rotationRule,scaleRule);
         if (weld){
+            print("in weld");
             simulatePhysics(GOToAttach,Vector3.zero,false);
         }
     }
@@ -62,6 +66,7 @@ public class TreasureHunter : MonoBehaviour
         //making the parent null sets its parent to the world origin (meaning relative & global transforms become the same)
         GOToDetach.transform.parent=null;
         handleAttachmentRules(GOToDetach,locationRule,rotationRule,scaleRule);
+        print("in detach game object");
     }
 
         public static void handleAttachmentRules(GameObject GOToHandle, AttachmentRule locationRule, AttachmentRule rotationRule, AttachmentRule scaleRule){
@@ -83,12 +88,17 @@ public class TreasureHunter : MonoBehaviour
         //technically don't need to change anything but I wanted to compress into ternary
         (scaleRule==AttachmentRule.KeepWorld)?GOToHandle.transform.localScale:
         new Vector3(1,1,1);
+        print("in handle attachment rules");
     }
 
     public void simulatePhysics(GameObject target,Vector3 oldParentVelocity,bool simulate){
+        print("in simulate physics");
         Rigidbody rb=target.GetComponent<Rigidbody>();
+        print("rb = ");
+        print(rb);
         if (rb){
             if (!simulate){
+                print("rigid body destroyed");
                 Destroy(rb);
             } 
         } else{
@@ -98,6 +108,8 @@ public class TreasureHunter : MonoBehaviour
                 //need to set its velocity itself.... even if you switch the kinematic/gravity settings around instead of deleting/adding rb
                 Rigidbody newRB=target.AddComponent<Rigidbody>();
                 newRB.velocity=oldParentVelocity;
+
+                print("in else simulate");
             }
         }
     }
@@ -111,10 +123,22 @@ public class TreasureHunter : MonoBehaviour
             AttachmentRule howToAttach=pressedA?AttachmentRule.KeepWorld:AttachmentRule.SnapToTarget;
             attachGameObjectToAChildGameObject(outHit.collider.gameObject,rightPointerObject.gameObject,howToAttach,howToAttach,AttachmentRule.KeepWorld,true);
             thingIGrabbed=outHit.collider.gameObject.GetComponent<CollectibleTreasure>();
+            print("thing i grabbed = ");
+            print(thingIGrabbed);
+            Destroy(thingIGrabbed.gameObject);
+            countObjectsCollected++;
+            score.text = "This is Ashley and Aakash. \n You have collected " + countObjectsCollected + " items.  \n Collect 10 to win.";
+            if(countObjectsCollected == 10) {
+                score.text = "";
+                win.text = "This is Ashley and Aakash. \n You collected 10 items and you win!!";
+            }
+            //print(thingIGrabbed);
+
         }
     }
 
     void letGo(){
+        print("in let go");
         if (thingIGrabbed){
             Collider[] overlappingThingsWithLeftHand=Physics.OverlapSphere(leftPointerObject.transform.position,0.01f);
             if (overlappingThingsWithLeftHand.Length>0){
@@ -151,8 +175,8 @@ public class TreasureHunter : MonoBehaviour
             {
                 win.fontSize = 20;
                 win.font.material.color = Color.blue;
-                win.text = "Hi Ashley" + outHit.transform.gameObject.name;
-                print("RAY RAY RAY!");
+                //win.text = "Hi Ashley" + outHit.transform.gameObject.name;
+                //print("RAY RAY RAY!");
                 var selection = outHit.transform;
             if (selection.CompareTag(selectableTag))
             {
@@ -300,15 +324,15 @@ public class TreasureHunter : MonoBehaviour
                         
                     }
 
-                win.text = "";
-                win.text = "Hi. This is Ashley and Aakash. You have " + kc + " items. Worth " + point + " points.";
+                //win.text = "";
+                //win.text = "Hi. This is Ashley and Aakash. You have " + kc + " items. Worth " + point + " points.";
             }
 
 
             if(invent.colTres.Count == 3){
                 print("Dude, you win.");
-                score.fontSize = 33;
-                score.text = "Dude. You Win. This is Aakash again.";
+                //score.fontSize = 33;
+                //score.text = "Dude. You Win. This is Aakash again.";
             }
 
         }
